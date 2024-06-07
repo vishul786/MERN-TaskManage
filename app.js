@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 7000;
 
 const startServer = async() => {
     try {
-        await db_con("mongodb://localhost:27017/taskDb")
+        await db_con("mongodb://127.0.0.1:27017/Task_Manag")
         app.listen(PORT, () =>{
             console.log(`Server is running on port ${PORT}`);                  
         })
